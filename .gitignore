@@ -1,0 +1,33 @@
+# --- Dependencies ---
+# node_modules contains thousands of library files. 
+# They are heavy and can be reinstalled via 'npm install', so never save them.
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# --- Environment Variables ---
+# .env files contain passwords and API keys. 
+# NEVER upload these to GitHub or anyone can hack your database.
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- Build Outputs ---
+# These are generated files created when you build your React app.
+# They are large and change frequently.
+dist/
+build/
+server/dist/
+
+# --- Operating System Files ---
+# Mac OS
+.DS_Store
+# Windows
+Thumbs.db
+
+# --- Logs ---
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
